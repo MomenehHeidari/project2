@@ -1,0 +1,141 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  main {
+    display: flex;
+  }
+
+  #todoitems,
+  #doneitems {
+    background: linear-gradient(to left, rgb(72 155 194),rgb(40, 40, 247));
+    width: 500px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  }
+
+  form h2,
+  section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    align-items: center;
+    color: white;
+  }
+
+  #input-task {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(96, 3, 116);
+    margin-bottom: 16px;
+    padding: 0 10px;
+    transition: 0.3s;
+    outline: none;
+  }
+
+  #add-task-btn {
+    background-color:white;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 10px;
+    margin: 16px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+
+  .todo-submit-edit {
+    background-color: rgb(73, 129, 214);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin: 16px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    border: 2px solid white;
+  }
+
+  #add-task-btn:hover {
+    background-color: rgb(7, 10, 65);
+    color: white;
+  }
+
+  .todo-submit-edit:hover {
+    background-color: rgb(65, 16, 96);
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  #task-list > li,
+  #done-list > li {
+    padding: 12px;
+    border-bottom: 0.5px solid rgb(216, 188, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #task-list > li:last-of-type {
+    border-bottom: none;
+  }
+
+  #done-list > li:last-of-type {
+    border-bottom: none;
+  }
+
+  .icons8-close,
+  .icons8-edit,
+  .icons8-done,
+  .icons8-undo{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 3px solid white;
+    background-color: white;
+  }
+
+  .icons8-close:hover, 
+  .icons8-edit:hover,
+  .icons8-done:hover,
+  .icons8-undo:hover{
+    background-color:rgb(77, 218, 77);
+    color: white;
+  }
+
+  #task-list > li > div > div {
+    margin: 0 3px;
+    cursor: pointer;
+  }
+
+  #done-list > li > div > div,
+  img {
+    margin: 0 3px;
+    cursor: pointer;
+  }
+
+  #done-list > li > div {
+    display: flex;
+  }

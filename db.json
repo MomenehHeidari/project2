@@ -1,0 +1,13 @@
+{
+  "toDoList": [
+    {
+      "title": "new friend",
+      "id": 1
+    },
+    {
+      "title": "find a friend",
+      "id": 2
+    }
+  ],
+  "doneList": []
+}
